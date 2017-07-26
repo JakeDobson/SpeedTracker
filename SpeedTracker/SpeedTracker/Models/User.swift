@@ -152,10 +152,10 @@ class User {
             let record = try recordFor(data)
             self.database.save(record, completionHandler: {(record, error) in
                 if error == nil && record != nil {
-                    print("Success saving \(record)")
+                    print("Success saving \(String(describing: record))")
                     OperationQueue.main.addOperation { completion(true) }
                 } else {
-                    print(error)
+                    print(error!)
                     OperationQueue.main.addOperation { completion(false) }
                 }
                 
@@ -175,7 +175,7 @@ class User {
                 if let records = records{
                     var fetchedData = [ [String:[Route]] ]()
                     for record in records{
-                        print("Creation Date: \(record.creationDate?.description)")
+                        print("Creation Date: \(String(describing: record.creationDate?.description))")
                     }
                     if records.count > 1 {
                         let queue = OperationQueue()
@@ -183,7 +183,7 @@ class User {
                             let operation = {
                                 self.database.delete(withRecordID: records[ii].recordID,
                                                      completionHandler: { (recordID, error) in
-                                print(error)
+                                print(error!)
                                 })
                             }
                             queue.addOperation(operation)
@@ -205,7 +205,7 @@ class User {
                     OperationQueue.main.addOperation { completion(fetchedData.last) }
                 }
             } else {
-                print(error)
+                print(error!)
             }
         }
     }

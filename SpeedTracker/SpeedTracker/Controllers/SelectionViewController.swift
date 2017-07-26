@@ -9,15 +9,13 @@
 import UIKit
 
 class SelectionViewController: UIViewController {
-
+	//outlets
     @IBOutlet weak var walkingGlyph: UIImageView!
     @IBOutlet weak var bicycleGlyph: UIImageView!
     @IBOutlet weak var carGlyph: UIImageView!
-
-
-    let routeVC = RouteViewController(nibName: "RouteViewController",
-                                         bundle: nil)
-
+	//s
+    let routeVC = RouteViewController( nibName: "RouteViewController", bundle: nil)
+//MARK: life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 

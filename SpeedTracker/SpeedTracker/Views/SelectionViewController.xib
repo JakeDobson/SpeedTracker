@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G24b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,62 +22,77 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walking-glyph" translatesAutoresizingMaskIntoConstraints="NO" id="RGt-Sj-sT5">
-                    <rect key="frame" x="124" y="82" width="128" height="128"/>
-                    <color key="backgroundColor" red="0.99215686270000003" green="0.51764705879999995" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <gestureRecognizers/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="128" id="86x-5B-sP1"/>
-                        <constraint firstAttribute="height" constant="128" id="GS7-iS-rb0"/>
-                    </constraints>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="te6-sQ-w19" appends="YES" id="wgM-lc-uvu"/>
-                    </connections>
-                </imageView>
-                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle-glyph" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5m7-yK-r3Z">
-                    <rect key="frame" x="124" y="218" width="128" height="128"/>
-                    <color key="backgroundColor" red="0.8468052828" green="1" blue="0.30171232329999997" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="tintColor" red="0.27450980390000002" green="0.78823529410000004" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <gestureRecognizers/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="128" id="F8j-0B-4ZL"/>
-                        <constraint firstAttribute="width" constant="128" id="YUk-1m-Hg3"/>
-                    </constraints>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="ikG-W7-f1K" appends="YES" id="S02-eo-OYq"/>
-                    </connections>
-                </imageView>
-                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car-glyph" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-rP-mrG">
-                    <rect key="frame" x="124" y="354" width="128" height="128"/>
-                    <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <gestureRecognizers/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="128" id="5Ad-vc-VqP"/>
-                        <constraint firstAttribute="height" constant="128" id="9p2-ZZ-abz"/>
-                    </constraints>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="Til-nc-gCz" appends="YES" id="lcP-iD-M0d"/>
-                    </connections>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Your Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWu-oo-daH">
-                    <rect key="frame" x="121" y="28" width="134" height="29"/>
+                    <rect key="frame" x="121" y="36" width="134" height="29"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gqe-Wy-UAD" userLabel="TripSelections">
+                    <rect key="frame" x="123" y="101" width="128" height="481"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaH-Wa-hO3">
+                            <rect key="frame" x="0.0" y="0.0" width="128" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="128" id="2CE-Gl-NWQ"/>
+                                <constraint firstAttribute="height" constant="36" id="HD5-08-uQJ"/>
+                            </constraints>
+                        </view>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walking-glyph" translatesAutoresizingMaskIntoConstraints="NO" id="RGt-Sj-sT5">
+                            <rect key="frame" x="0.0" y="42" width="128" height="128"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.51764705879999995" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="128" id="86x-5B-sP1"/>
+                                <constraint firstAttribute="height" constant="128" id="GS7-iS-rb0"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="te6-sQ-w19" appends="YES" id="wgM-lc-uvu"/>
+                            </connections>
+                        </imageView>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle-glyph" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5m7-yK-r3Z">
+                            <rect key="frame" x="0.0" y="177" width="128" height="128"/>
+                            <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="F8j-0B-4ZL"/>
+                                <constraint firstAttribute="width" constant="128" id="YUk-1m-Hg3"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="ikG-W7-f1K" appends="YES" id="S02-eo-OYq"/>
+                            </connections>
+                        </imageView>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car-glyph" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-rP-mrG">
+                            <rect key="frame" x="0.0" y="311" width="128" height="128"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="128" id="5Ad-vc-VqP"/>
+                                <constraint firstAttribute="height" constant="128" id="9p2-ZZ-abz"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Til-nc-gCz" appends="YES" id="lcP-iD-M0d"/>
+                            </connections>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sP9-rQ-O3U">
+                            <rect key="frame" x="0.0" y="445" width="128" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="128" id="u2s-7a-SVS"/>
+                                <constraint firstAttribute="height" constant="36" id="vhc-Ly-xvL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="AWu-oo-daH" firstAttribute="top" secondItem="Gfy-Qf-I8C" secondAttribute="top" constant="28" id="9jT-Ed-YBT"/>
+                <constraint firstItem="gqe-Wy-UAD" firstAttribute="centerX" secondItem="Gfy-Qf-I8C" secondAttribute="centerX" id="9LR-B0-XH3"/>
+                <constraint firstItem="AWu-oo-daH" firstAttribute="top" secondItem="Gfy-Qf-I8C" secondAttribute="top" constant="36" id="9jT-Ed-YBT"/>
                 <constraint firstItem="AWu-oo-daH" firstAttribute="centerX" secondItem="Gfy-Qf-I8C" secondAttribute="centerX" id="GIc-jH-RTN"/>
-                <constraint firstItem="RGt-Sj-sT5" firstAttribute="top" secondItem="AWu-oo-daH" secondAttribute="bottom" constant="25" id="M0j-Ii-eRN"/>
-                <constraint firstItem="5m7-yK-r3Z" firstAttribute="top" secondItem="RGt-Sj-sT5" secondAttribute="bottom" constant="8" id="Nfb-Eg-7IR"/>
-                <constraint firstItem="vkf-rP-mrG" firstAttribute="centerX" secondItem="Gfy-Qf-I8C" secondAttribute="centerX" id="VRV-6s-C0s"/>
-                <constraint firstItem="vkf-rP-mrG" firstAttribute="top" secondItem="5m7-yK-r3Z" secondAttribute="bottom" constant="8" id="hgd-Lj-EjV"/>
-                <constraint firstItem="5m7-yK-r3Z" firstAttribute="centerX" secondItem="Gfy-Qf-I8C" secondAttribute="centerX" id="iVH-BJ-1Bh"/>
-                <constraint firstItem="RGt-Sj-sT5" firstAttribute="centerX" secondItem="Gfy-Qf-I8C" secondAttribute="centerX" id="nEz-qX-Ezg"/>
+                <constraint firstAttribute="bottom" secondItem="gqe-Wy-UAD" secondAttribute="bottom" constant="85" id="OXG-yK-gjI"/>
+                <constraint firstItem="gqe-Wy-UAD" firstAttribute="top" secondItem="AWu-oo-daH" secondAttribute="bottom" constant="36" id="yzt-7R-dMo"/>
             </constraints>
-            <point key="canvasLocation" x="-136" y="-91"/>
+            <point key="canvasLocation" x="-136.5" y="-91.5"/>
         </view>
         <tapGestureRecognizer id="te6-sQ-w19" userLabel="walkingGestureRecognizer">
             <connections>

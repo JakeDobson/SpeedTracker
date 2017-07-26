@@ -92,9 +92,9 @@ class RouteViewController: UIViewController {
             }
 
             return MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: (minLat + maxLat)/2,
+                center: CLLocationCoordinate2D(	latitude: (minLat + maxLat)/2,
                                                longitude: (minLng + maxLng)/2),
-                span: MKCoordinateSpan(latitudeDelta: (maxLat - minLat)*1.75,
+                span: MKCoordinateSpan(	latitudeDelta: (maxLat - minLat)*1.75,
                                        longitudeDelta: (maxLng - minLng)*1.75))
         } else {
             return nil
@@ -103,8 +103,8 @@ class RouteViewController: UIViewController {
 
     private func setupPolyline() {
         var coords = self.allLocations
-                         .map({CLLocationCoordinate2D(latitude: $0.coordinate.latitude,
-                                                      longitude: $0.coordinate.longitude)})
+                         .map({CLLocationCoordinate2D(	latitude: $0.coordinate.latitude,
+                                                       longitude: $0.coordinate.longitude)})
         self.polyline = MKPolyline(coordinates: &coords, count: coords.count)
     }
 
@@ -117,7 +117,6 @@ class RouteViewController: UIViewController {
         } else {
             // No locations were found!
             self.mapView.isHidden = true
-
             print("Error: no locations saved.")
         }
     }
@@ -243,12 +242,3 @@ extension RouteViewController: CLLocationManagerDelegate {
     }
 
 }
-
-
-
-
-
-
-
-
-

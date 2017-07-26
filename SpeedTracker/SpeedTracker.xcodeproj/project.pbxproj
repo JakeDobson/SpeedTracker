@@ -167,7 +167,7 @@
 				TargetAttributes = {
 					F25CC0731DD0F5AF00A6786D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = KUNVAN4RR6;
+						DevelopmentTeam = HYPCVH7NE6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -332,11 +332,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SpeedTracker/SpeedTracker.entitlements;
-				DEVELOPMENT_TEAM = KUNVAN4RR6;
+				DEVELOPMENT_TEAM = HYPCVH7NE6;
 				INFOPLIST_FILE = SpeedTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BastardizedProductions.SpeedTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JacobDobson.SpeedTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -348,11 +348,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SpeedTracker/SpeedTracker.entitlements;
-				DEVELOPMENT_TEAM = KUNVAN4RR6;
+				DEVELOPMENT_TEAM = HYPCVH7NE6;
 				INFOPLIST_FILE = SpeedTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BastardizedProductions.SpeedTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JacobDobson.SpeedTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
